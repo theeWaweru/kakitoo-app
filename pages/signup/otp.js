@@ -78,7 +78,7 @@ export default function otp() {
               className="otp-app"
               id="otp-app"
               // value={code}
-              onChange={handleChange}
+              // onChange={handleChange}
               numInputs={4}
               isInputNum={true}
               shouldAutoFocus={true}
