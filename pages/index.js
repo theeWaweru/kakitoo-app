@@ -1,14 +1,8 @@
-import React from "react";
 import Nav from "../comps/Nav";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function app() {
-  // const MainForm = () => {};
-  // const [formStep, setFormStep] = React.useState(0);
-  // const [firstName, setFirstName] = React.useState("");
-  // const [lastName, setLastName] = React.useState("");
-
   return (
     <div className="body-div">
       <div className="deets-div">

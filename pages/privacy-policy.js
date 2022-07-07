@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Nav from "../comps/Nav";
 
 const privacyPolicy = () => {

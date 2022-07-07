@@ -1,6 +1,5 @@
 import Nav from "../../comps/Nav";
 import Image from "next/image";
-import React from "react";
 
 export default function finishRegistration() {
   

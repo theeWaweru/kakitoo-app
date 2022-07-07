@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import Nav from "../../comps/Nav";
-import * as React from "react";
+// import * as React from "react";
 // import { useForm } from "react-hook-form";
 
 export default function forgotphonenumber() {
