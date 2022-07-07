@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "../../comps/Nav";
-// import * as React from "react";
-import React, { useForm } from "react-hook-form";
+import * as React from "react";
+import { useForm } from "react-hook-form";
 import OtpInput from "react-otp-input";
 import { useState } from "react";
 
