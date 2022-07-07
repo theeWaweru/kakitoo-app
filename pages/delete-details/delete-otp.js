@@ -7,26 +7,26 @@ import OtpInput from "react-otp-input";
 import { useState } from "react";
 
 export default function app() {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm({ defaultValues: { otp: "" } });
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   watch,
+  //   formState: { errors },
+  // } = useForm({ defaultValues: { otp: "" } });
 
-  const [code, setCode] = useState("");
+  // const [code, setCode] = useState("");
 
-  const handleChange = (code) => setCode(code);
+  // const handleChange = (code) => setCode(code);
   // handleChange = (otp) => this.setState({ otp });
 
-  console.log(errors);
-  console.log(watch());
+  // console.log(errors);
+  // console.log(watch());
   return (
     <div className="body-div">
       <div className="details-div">
         <div className="details-div-holder">
           <Nav />
-          <div className="title-div">
+          <div className="title-div with-margin">
             <div className="title-text">You will receive an SMS</div>
           </div>
           <div className="sub-text">It&apos;s to confirm your number</div>
@@ -45,14 +45,14 @@ export default function app() {
               {/* this is the OTP app below */}
               <div className="otp-app" id="otp-app">
                 <OtpInput
-                  value={code}
-                  onChange={handleChange}
+                  // value={code}
+                  // onChange={handleChange}
                   numInputs={4}
                   isInputNum={true}
                   shouldAutoFocus={true}
-                  {...register("otp", {
-                    required: "Kindly key in the OTP sent to your phone",
-                  })}
+                  // {...register("otp", {
+                  //   required: "Kindly key in the OTP sent to your phone",
+                  // })}
                   inputStyle={{
                     border: "1px solid #4d4d4d",
                     borderRadius: "8px",
@@ -71,7 +71,7 @@ export default function app() {
                     color: "#f7931e",
                   }}
                 />
-                <p className="error-text">{errors.otp?.message}</p>
+                {/* <p className="error-text">{errors.otp?.message}</p> */}
               </div>
               <input
                 type="submit"

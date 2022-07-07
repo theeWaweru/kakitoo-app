@@ -5,12 +5,12 @@ import * as React from "react";
 import { useForm } from "react-hook-form";
 
 export default function app() {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm({ defaultValues: { phonenumber: "" } });
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   watch,
+  //   formState: { errors },
+  // } = useForm({ defaultValues: { phonenumber: "" } });
 
   // console.log(errors);
   // console.log(watch());
@@ -82,19 +82,19 @@ export default function app() {
                     event.preventDefault();
                   }
                 }}
-                {...register("phonenumber", {
-                  required: "Kindly key in your phone number",
-                  minLength: {
-                    value: "10",
-                    message: "minimum length is 10, e.g 0712345678",
-                  },
-                  maxLength: {
-                    value: "10",
-                    message: "maximum length is 10, e.g 0712345678",
-                  },
-                })}
+                // {...register("phonenumber", {
+                //   required: "Kindly key in your phone number",
+                //   minLength: {
+                //     value: "10",
+                //     message: "minimum length is 10, e.g 0712345678",
+                //   },
+                //   maxLength: {
+                //     value: "10",
+                //     message: "maximum length is 10, e.g 0712345678",
+                //   },
+                // })}
               />
-              <p className="error-text">{errors.phonenumber?.message}</p>
+              {/* <p className="error-text">{errors.phonenumber?.message}</p> */}
               <label
                 className="radio-button-field w-radio"
                 htmlFor="terms-of-service-radio"
@@ -107,9 +107,9 @@ export default function app() {
                   defaultValue="Radio"
                   data-name="term-of-service"
                   required=""
-                  {...register("terms", {
-                    required: "Kindly view and tick the terms of service",
-                  })}
+                  // {...register("terms", {
+                  //   required: "Kindly view and tick the terms of service",
+                  // })}
                 />
                 <span className="w-form-label" htmlFor="Terms-of-Service">
                   Agree to
@@ -118,7 +118,7 @@ export default function app() {
                   <a className="text-link">Terms of Service</a>
                 </Link>
               </label>
-              <p className="error-text">{errors.terms?.message}</p>
+              {/* <p className="error-text">{errors.terms?.message}</p> */}
               <input
                 type="submit"
                 value="Next"

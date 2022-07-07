@@ -7,16 +7,16 @@ import OtpInput from "react-otp-input";
 import { useState } from "react";
 
 export default function app() {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm({ defaultValues: { otp: "" } });
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   watch,
+  //   formState: { errors },
+  // } = useForm({ defaultValues: { otp: "" } });
 
-  const [code, setCode] = useState("");
+  // const [code, setCode] = useState("");
 
-  const handleChange = (code) => setCode(code);
+  // const handleChange = (code) => setCode(code);
   // handleChange = (otp) => this.setState({ otp });
 
   //   console.log(errors);

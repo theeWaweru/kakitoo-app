@@ -5,12 +5,12 @@ import * as React from "react";
 import { useForm } from "react-hook-form";
 
 export default function app() {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm({ defaultValues: { username: "" } });
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   watch,
+  //   formState: { errors },
+  // } = useForm({ defaultValues: { username: "" } });
 
   // console.log(errors);
   // console.log(watch());
@@ -73,21 +73,16 @@ export default function app() {
               id="username"
               required="true"
               autoFocus="true"
-              onKeyPress={(event) => {
-                if (!/[0-9]/.test(event.key)) {
-                  event.preventDefault();
-                }
-              }}
-              {...register("username", {
-                required: "Kindly key in your desired Username",
-                minLength: {
-                  value: "4",
-                  message: "minimum length is 4, e.g Job3",
-                },
-              })}
+              // {...register("username", {
+              //   required: "Kindly key in your desired Username",
+              //   minLength: {
+              //     value: "4",
+              //     message: "minimum length is 4, e.g Job3",
+              //   },
+              // })}
               placeholder="Job24"
             ></input>
-            <p className="error-text">{errors.username?.message}</p>
+            {/* <p className="error-text">{errors.username?.message}</p> */}
             <input
               className="link-block"
               type="submit"

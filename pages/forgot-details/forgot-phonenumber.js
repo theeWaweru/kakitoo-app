@@ -5,12 +5,12 @@ import * as React from "react";
 import { useForm } from "react-hook-form";
 
 export default function forgotphonenumber() {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm({ defaultValues: { phonenumber: "" } });
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   watch,
+  //   formState: { errors },
+  // } = useForm({ defaultValues: { phonenumber: "" } });
 
   // console.log(errors);
   // console.log(watch());
@@ -61,19 +61,19 @@ export default function forgotphonenumber() {
                     event.preventDefault();
                   }
                 }}
-                {...register("phonenumber", {
-                  required: "Kindly key in your phone number",
-                  minLength: {
-                    value: "10",
-                    message: "Minimum length is 10, e.g 0712345678",
-                  },
-                  maxLength: {
-                    value: "10",
-                    message: "Maximum length is 10, e.g 0712345678",
-                  },
-                })}
+                // {...register("phonenumber", {
+                //   required: "Kindly key in your phone number",
+                //   minLength: {
+                //     value: "10",
+                //     message: "Minimum length is 10, e.g 0712345678",
+                //   },
+                //   maxLength: {
+                //     value: "10",
+                //     message: "Maximum length is 10, e.g 0712345678",
+                //   },
+                // })}
               />
-              <p className="error-text">{errors.phonenumber?.message}</p>
+              {/* <p className="error-text">{errors.phonenumber?.message}</p> */}
               <input
                 type="submit"
                 defaultValue="Next"

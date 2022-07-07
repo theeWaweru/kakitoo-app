@@ -7,14 +7,14 @@ import OtpInput from "react-otp-input";
 import { useState } from "react";
 
 export default function otp() {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm({ defaultValues: { otp: "" } });
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   watch,
+  //   formState: { errors },
+  // } = useForm ({ defaultValues: { otp: "" } });
 
-  const [code, setCode] = useState("");
+  // const [code, setCode] = useState("");
 
   const handleChange = (code) => setCode(code);
 
@@ -78,7 +78,7 @@ export default function otp() {
             <OtpInput
               className="otp-app"
               id="otp-app"
-              value={code}
+              // value={code}
               onChange={handleChange}
               numInputs={4}
               isInputNum={true}
@@ -105,7 +105,7 @@ export default function otp() {
                 color: "#f7931e",
               }}
             />
-            <p className="error-text">{errors.otp?.message}</p>
+            {/* <p className="error-text">{errors.otp?.message}</p> */}
             <input
               type="submit"
               value="Next"
