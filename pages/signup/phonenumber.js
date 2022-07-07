@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "../../comps/Nav";
 import * as React from "react";
-import { useForm } from "react-hook-form";
+// import { useForm } from "react-hook-form";
 
 export default function app() {
   // const {
@@ -73,7 +73,7 @@ export default function app() {
               id="phonenumber"
               className="text-input w-input"
               placeholder="e.g 0702123456"
-              required="true"
+              // required="true"
               autoFocus="true"
               type="text"
               size="10"

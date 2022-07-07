@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "../../comps/Nav";
 import * as React from "react";
-import { useForm } from "react-hook-form";
+// import { useForm } from "react-hook-form";
 
 export default function app() {
   // const {
@@ -71,7 +71,7 @@ export default function app() {
               type="text"
               className="text-input"
               id="username"
-              required="true"
+              // required="true"
               autoFocus="true"
               // {...register("username", {
               //   required: "Kindly key in your desired Username",

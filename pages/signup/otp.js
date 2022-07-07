@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import Nav from "../../comps/Nav";
 import * as React from "react";
-import { useForm } from "react-hook-form";
+// import { useForm } from "react-hook-form";
 import OtpInput from "react-otp-input";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function otp() {
   // const {
@@ -83,7 +82,7 @@ export default function otp() {
               numInputs={4}
               isInputNum={true}
               shouldAutoFocus={true}
-              required="true"
+              // required="true"
               // {...register("otp", {
               //   required: "Kindly key in the OTP sent to your phone",
               // })}

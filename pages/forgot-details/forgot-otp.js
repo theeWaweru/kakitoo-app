@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "../../comps/Nav";
 import * as React from "react";
-import { useForm } from "react-hook-form";
+// import { useForm } from "react-hook-form";
 import OtpInput from "react-otp-input";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function app() {
   // const {
@@ -45,14 +45,14 @@ export default function app() {
             <div className="text-input-heading">Enter your OTP</div>
             {/* this is the OTP app below */}
             <OtpInput
-              value={code}
-              onChange={handleChange}
+              // value={code}
+              // onChange={handleChange}
               numInputs={4}
               isInputNum={true}
               shouldAutoFocus={true}
               className="otp-app"
               id="otp-app"
-              required="true"
+              // required="true"
               // {...register("otp", {
               //   required: "Kindly key in the OTP sent to your phone",
               // })}
@@ -74,7 +74,7 @@ export default function app() {
                 color: "#f7931e",
               }}
             />
-            <p className="error-text">{errors.otp?.message}</p>
+            {/* <p className="error-text">{errors.otp?.message}</p> */}
             <input
               type="submit"
               value="Next"
