@@ -50,9 +50,9 @@ export default function app() {
                   numInputs={4}
                   isInputNum={true}
                   shouldAutoFocus={true}
-                  {...register("otp", {
-                    required: "Kindly key in the OTP sent to your phone",
-                  })}
+                  // {...register("otp", {
+                  //   required: "Kindly key in the OTP sent to your phone",
+                  // })}
                   inputStyle={{
                     border: "1px solid #4d4d4d",
                     borderRadius: "8px",
